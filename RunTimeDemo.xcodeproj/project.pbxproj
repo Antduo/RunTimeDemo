@@ -17,6 +17,9 @@
 		664E290D20BB8CC7007ADAA4 /* UIImage+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 664E290C20BB8CC7007ADAA4 /* UIImage+extension.m */; };
 		664E291020BB9B15007ADAA4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 664E290F20BB9B15007ADAA4 /* Person.m */; };
 		664E291320BBD26A007ADAA4 /* Person+associated.m in Sources */ = {isa = PBXBuildFile; fileRef = 664E291220BBD26A007ADAA4 /* Person+associated.m */; };
+		664E291720BC1FBE007ADAA4 /* UIControl+Limit.m in Sources */ = {isa = PBXBuildFile; fileRef = 664E291520BC1FBE007ADAA4 /* UIControl+Limit.m */; };
+		664E291A20BC1FC5007ADAA4 /* UIViewController+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 664E291920BC1FC5007ADAA4 /* UIViewController+Log.m */; };
+		664E291D20BC1FCC007ADAA4 /* NSArray+CrashHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 664E291B20BC1FCC007ADAA4 /* NSArray+CrashHandle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,12 @@
 		664E290F20BB9B15007ADAA4 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		664E291120BBD26A007ADAA4 /* Person+associated.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+associated.h"; sourceTree = "<group>"; };
 		664E291220BBD26A007ADAA4 /* Person+associated.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+associated.m"; sourceTree = "<group>"; };
+		664E291520BC1FBE007ADAA4 /* UIControl+Limit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Limit.m"; sourceTree = "<group>"; };
+		664E291620BC1FBE007ADAA4 /* UIControl+Limit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Limit.h"; sourceTree = "<group>"; };
+		664E291820BC1FC5007ADAA4 /* UIViewController+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Log.h"; sourceTree = "<group>"; };
+		664E291920BC1FC5007ADAA4 /* UIViewController+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Log.m"; sourceTree = "<group>"; };
+		664E291B20BC1FCC007ADAA4 /* NSArray+CrashHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CrashHandle.m"; sourceTree = "<group>"; };
+		664E291C20BC1FCC007ADAA4 /* NSArray+CrashHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CrashHandle.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +78,7 @@
 		664E28F220BB8B65007ADAA4 /* RunTimeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				664E291420BC1F9E007ADAA4 /* category */,
 				664E290920BB8C86007ADAA4 /* lufei.jpg */,
 				664E28F320BB8B65007ADAA4 /* AppDelegate.h */,
 				664E28F420BB8B65007ADAA4 /* AppDelegate.m */,
@@ -76,10 +86,6 @@
 				664E28F720BB8B65007ADAA4 /* ViewController.m */,
 				664E290E20BB9B15007ADAA4 /* Person.h */,
 				664E290F20BB9B15007ADAA4 /* Person.m */,
-				664E291120BBD26A007ADAA4 /* Person+associated.h */,
-				664E291220BBD26A007ADAA4 /* Person+associated.m */,
-				664E290B20BB8CC7007ADAA4 /* UIImage+extension.h */,
-				664E290C20BB8CC7007ADAA4 /* UIImage+extension.m */,
 				664E28F920BB8B65007ADAA4 /* Main.storyboard */,
 				664E28FC20BB8B67007ADAA4 /* Assets.xcassets */,
 				664E28FE20BB8B67007ADAA4 /* LaunchScreen.storyboard */,
@@ -87,6 +93,23 @@
 				664E290220BB8B67007ADAA4 /* main.m */,
 			);
 			path = RunTimeDemo;
+			sourceTree = "<group>";
+		};
+		664E291420BC1F9E007ADAA4 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				664E291C20BC1FCC007ADAA4 /* NSArray+CrashHandle.h */,
+				664E291B20BC1FCC007ADAA4 /* NSArray+CrashHandle.m */,
+				664E291820BC1FC5007ADAA4 /* UIViewController+Log.h */,
+				664E291920BC1FC5007ADAA4 /* UIViewController+Log.m */,
+				664E291620BC1FBE007ADAA4 /* UIControl+Limit.h */,
+				664E291520BC1FBE007ADAA4 /* UIControl+Limit.m */,
+				664E291120BBD26A007ADAA4 /* Person+associated.h */,
+				664E291220BBD26A007ADAA4 /* Person+associated.m */,
+				664E290B20BB8CC7007ADAA4 /* UIImage+extension.h */,
+				664E290C20BB8CC7007ADAA4 /* UIImage+extension.m */,
+			);
+			path = category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +186,9 @@
 				664E28F820BB8B65007ADAA4 /* ViewController.m in Sources */,
 				664E290320BB8B67007ADAA4 /* main.m in Sources */,
 				664E291020BB9B15007ADAA4 /* Person.m in Sources */,
+				664E291A20BC1FC5007ADAA4 /* UIViewController+Log.m in Sources */,
+				664E291720BC1FBE007ADAA4 /* UIControl+Limit.m in Sources */,
+				664E291D20BC1FCC007ADAA4 /* NSArray+CrashHandle.m in Sources */,
 				664E28F520BB8B65007ADAA4 /* AppDelegate.m in Sources */,
 				664E291320BBD26A007ADAA4 /* Person+associated.m in Sources */,
 				664E290D20BB8CC7007ADAA4 /* UIImage+extension.m in Sources */,
